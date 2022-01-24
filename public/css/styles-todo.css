@@ -1,0 +1,141 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(120deg,#4fca1a,#236109);
+    color:white;
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+}
+
+header{
+    font-size: 1.5rem;
+}
+
+header,
+form{
+    min-height: 20vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input,
+form button{
+    padding:0.5rem;
+    font-size: 2rem;
+    border:none;
+    background:white;
+}
+
+form button{
+    color:#5aff15;
+    background:white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form button:hover{
+    color:white;
+    background: #5aff15;
+}
+
+.todo-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list{
+    min-width: 40%;
+    list-style: none;
+}
+
+.todo{
+    margin: 0.5rem;
+    background: white;
+    color:black;
+    font-size: 1.5rem;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0.5rem;
+    transition: all 1s ease;
+}
+
+.todo li{
+    flex:1;
+}
+
+.concluir-btn, .deletar-btn{
+    background: grey;
+    color:white;
+    border: none;
+    padding:1rem;
+    cursor: pointer;
+    font-size: 1rem;
+
+}
+
+.concluir-btn{
+    background: #5aff15;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+.todo-item{
+    padding: 0rem 0.5rem;
+}
+
+.fa-trash, .fa-check{
+    pointer-events: none;
+}
+
+.feito{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.deletar{
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity:0;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 0 !important;
+    background-image: none;
+}
+  
+.select {
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+select {
+    color: black;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    cursor: pointer;
+    width: 12rem;
+    padding: 1rem;
+}
+.select::after {
+    content: "\25BC";
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    background: #5aff15;
+    cursor: pointer;
+    pointer-events: none;
+}

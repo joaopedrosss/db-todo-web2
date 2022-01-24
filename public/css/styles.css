@@ -1,0 +1,140 @@
+*, /* seletor universal */
+*:before, /* Antes do conteúdo selecionado */
+*:after { /* Depois do conteúdo selecionado */
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; /* Aplica dimensionamento de caixa de borda a todos os elementos */
+}
+
+body {
+  background-color: #236109;
+}
+
+.background {
+  width: 430px;
+  height: 520px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+}
+
+.background .forma_index {
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.forma_index:first-child {
+  background: linear-gradient(#150E56,
+      #1597BB);
+  left: -80px;
+  top: -80px;
+}
+
+.forma_index:last-child {
+  background: linear-gradient(to right,
+      #1F441E,
+      #CEE6B4);
+  right: -30px;
+  bottom: -80px;
+}
+
+.background .forma_cad {
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.forma_cad:first-child {
+  background: linear-gradient(#9145B6,
+      #B958A5);
+  left: -80px;
+  top: -80px;
+}
+
+.forma_cad:last-child {
+  background: linear-gradient(to right,
+      #F3950D,
+      #F4E185);
+  right: -30px;
+  bottom: -80px;
+}
+
+form {
+  height: 520px; /** Altura **/
+  width: 400px; /** Largura **/
+  background-color: rgba(255, 255, 255, 0.13); /* Fundo branco com opacidade */
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.1); /* Borda do formulário com 2px e fundo branco com opacidade */
+  box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);  /* deslocamento-x = 0 | deslocamento-y = 0 | borrão-do-raio = 40px| cor da sombra com opacidade*/
+  padding: 50px 35px; /* Padding do formulário */
+}
+
+form * { /* Todo o formulário */
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+  /*color:black;*/
+  letter-spacing: 0.5px;
+  outline: none;
+  border: none;
+}
+
+form h3 { /* H3 do formulário */
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 42px;
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-top: 30px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+input {
+  display: block;
+  height: 50px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.07);
+  border-radius: 3px;
+  padding: 0 10px;
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+::placeholder {
+  color: #e5e5e5;
+}
+
+button {
+  margin-top: 50px;
+  width: 100%;
+  background-color: #ffffff;
+  color: #080710;
+  padding: 15px 0;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.linkPagina {
+  margin-top: 30px;
+  display: flex;
+}
+
+.voltar {
+  margin-top: 30px;
+  display: flex;
+}

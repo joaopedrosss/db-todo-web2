@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "dev": "nodemon ./server.js localhost 3080",
+    "express": "^4.17.2",
+    "mongoose": "^6.1.7",
+    "nodemon": "^2.0.15"
+  },
+  "devDependencies": {
+    "dotenv": "^14.2.0"
+  },
+  "scripts": {
+    "devStart": "nodemon server.js"
+  }
+}

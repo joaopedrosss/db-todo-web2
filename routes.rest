@@ -1,0 +1,20 @@
+
+GET http://localhost:3000/users
+
+###
+
+GET http://localhost:3000/users/61edd2358eb5db244e6de5ce
+
+###
+
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "email":"marcio@gmail.com",
+    "senha": "underline123"
+}
+
+###
+
+
