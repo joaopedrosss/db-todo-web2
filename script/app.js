@@ -1,4 +1,4 @@
-
+// => view/todo.html
 
 //seletores
 const todoInput = document.querySelector(".todo-input");
