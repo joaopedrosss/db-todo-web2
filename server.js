@@ -1,5 +1,8 @@
-//npm run devStart
-//localhost:3000\index
+/*
+PARA O RODAR server.js:
+DIGITAR: npm run devStart
+IR EM: localhost:3000\index
+*/
 const express = require("express"); //FRAMEWORK: expresss
 const { send } = require("express/lib/response");
 const app = express();
