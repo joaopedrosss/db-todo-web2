@@ -1,4 +1,4 @@
-//intergir co o banco de dados
+//ESTRUTURA BÁSICA DO BANCO DE DADOS - MongoDB No-SQL
 const mongoose = require("mongoose");
 
 const userSchema = new mongoose.Schema({

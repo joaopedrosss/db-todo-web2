@@ -6,7 +6,7 @@ const User = require("../models/user")
 
 module.exports = router
 
-//Consultar todos*
+//CONSULTAR USUARIOS*
 router.get('/',async(req,res) => {
     try{
         const usuarios = await User.find();
@@ -21,7 +21,7 @@ router.get('/:id',getUser,(req,res) => {
     res.json(res.usuario)
 })
 
-//Criar um usuario*
+//CRIAR USUÁRIOS
 router.post('/',async(req,res) => {
     const usuario = new User({
         email: req.body.email,

@@ -1,11 +1,11 @@
 //npm run devStart
 //localhost:3000\index
-const express = require("express");
+const express = require("express"); //FRAMEWORK: expresss
 const { send } = require("express/lib/response");
 const app = express();
-const mongoose = require("mongoose");
+const mongoose = require("mongoose");//BD: MongoDB
 
-//BANCO DE DADOS
+//BANCO DE DADOS - conectars
 mongoose.connect("mongodb://localhost/users",{useNewUrlParser: true}); 
 const db = mongoose.connection
 db.on("error",(error)=> console.error(error))
@@ -15,10 +15,11 @@ db.once("open",()=> console.log("Conectado ao banco de dados"))
 app.use(express.json())
 //app.use(express.urlencoded());
 
+//ROUTES
+
 const userRouter = require("./routes/users");
 app.use("/users",userRouter)
 
-//LOGIN E CADASTRO
 app.use(express.static(__dirname+'/public'));
 
 app.get('/index',(req,res) => {

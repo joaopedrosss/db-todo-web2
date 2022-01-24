@@ -3,7 +3,7 @@ GET http://localhost:3000/users
 
 ###
 
-GET http://localhost:3000/users/61edd2358eb5db244e6de5ce
+GET http://localhost:3000/users/61eef004e40c8d9a8acefeed
 
 ###
 
@@ -11,8 +11,8 @@ POST http://localhost:3000/users
 Content-Type: application/json
 
 {
-    "email":"marcio@gmail.com",
-    "senha": "underline123"
+    "email":"joazinho@gmail.com",
+    "senha": "senhalegal"
 }
 
 ###
